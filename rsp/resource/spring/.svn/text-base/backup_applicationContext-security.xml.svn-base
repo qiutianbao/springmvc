@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:b="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+                    
+
+	<http pattern="/js/*" security="none"></http>
+	<http pattern="/view/*" security="none"></http>
+	<http pattern="/jscomponent/*" security="none"></http>
+	<http pattern="/images/*" security="none"></http>
+	<http pattern="/css/*" security="none"></http>
+	<http pattern="/scripts" security="none"></http>
+	<http pattern="/scripts/*" security="none"></http>
+	<http pattern="/login/" security="none"></http>
+
+	<http realm="Contacts Realm">
+		<!--<intercept-url pattern="/login" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+		<intercept-url pattern="/index.jsp" filters="none" />
+        <intercept-url pattern="/loginManager.do?method=loginOut" filters="none" />
+        <intercept-url pattern="/loginManager.do?method=login" filters="none"/>
+        <intercept-url pattern="/dfSysRUserAction.do?method=loginByWorkNo" filters="none" />
+		<intercept-url pattern="/dfSysRUserAction.do?method=loginbyladp" filters="none" />
+		-->
+		<form-login login-page="/login" />
+		<logout logout-success-url="/index.jsp"/>
+		<!--<logout logout-success-url="/views/login_main.jsp" />
+		
+		--><!-- 
+		<session-management invalid-session-url="/login.jsp" session-authentication-strategy-ref="sessionAuthenticationStrategy" session-authentication-error-url="/error.jsp">
+		</session-management>
+         -->
+		<http-basic />
+		<!--
+			增加一个filter，这点与Acegi是不一样的，不能修改默认的filter了，这个filter位于FILTER_SECURITY_INTERCEPTOR之前
+		-->
+		<custom-filter before="FILTER_SECURITY_INTERCEPTOR" ref="waveCustomFilter" />
+	</http>
+	
+<!--	<b:bean id="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl"></b:bean>-->
+<!--	-->
+<!--	<b:bean id="sessionAuthenticationStrategy" class="com.wave.auth.SessionStrategy">  -->
+<!--	      <b:constructor-arg name="sessionRegistry" ref="sessionRegistry" />  -->
+<!--	      <b:property name="maximumSessions" value="-1" />  -->
+<!--	</b:bean> -->
+	<!--
+		一个自定义的filter，必须包含authenticationManager,accessDecisionManager,securityMetadataSource三个属性，
+		我们的所有控制将在这三个类中实现，解释详见具体配置
+	  -->
+	<b:bean id="waveCustomFilter" class="com.bigdata.auth.WaveFilterSecurityInterceptor">
+		<b:property name="authenticationManager" ref="authenticationManager" /><!--认证管理器-->
+		<b:property name="accessDecisionManager" ref="waveAccessDecisionManager" /><!--访问决策器-->
+		<b:property name="securityMetadataSource" ref="securityMetadataSource" /><!--资源源数据定义-->
+	</b:bean>
+	<!-- 认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="waveUserDetailService">
+			<!-- 如果用户的密码采用加密的话，可以加点“盐” <password-encoder hash="md5" />-->
+		</authentication-provider>
+	</authentication-manager>
+	
+	<b:bean id="waveUserDetailService" class="com.bigdata.auth.WaveUserDetailService">
+	</b:bean>
+
+	<!-- 访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 -->
+	<b:bean id="waveAccessDecisionManager" class="com.bigdata.auth.WaveAccessDecisionManager">
+		<b:property name="limitType" value="${limitType}"/>
+	</b:bean>
+
+	<!-- 资源源数据定义，即定义某一资源可以被哪些角色访问 -->
+	<b:bean id="securityMetadataSource" class="com.bigdata.auth.WaveInitAuthSource" >
+		<b:property name="nofilters" value="${nofiltersUrl}"></b:property>
+	</b:bean>
+	
+	<b:bean id="loggerListener" class="org.springframework.security.authentication.event.LoggerListener" />
+	 
+</b:beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="false" monitoring="autodetect"
+         dynamicConfig="true">
+    <!--磁盘存储器-->
+    <diskStore path="java.io.tmpdir"/>
+    <!--预设缓存配置-->
+    <defaultCache maxElementsInMemory="0"
+                  eternal="false"
+                  timeToIdleSeconds="1200"
+                  timeToLiveSeconds="1200"/>
+    <!--资源模块缓存-->
+    <!--cache 中最多可以存放的元素的数量:10000/cache中的元素将一直保存在内存中，不会因为时间超时而丢失/溢出不写入磁盘-->
+    <cache name="resCache" maxElementsInMemory="10000"
+           eternal="true"
+           overflowToDisk="false"/>
+	
+    <!--模板模块缓存-->
+    <!--
+	缓存实例名为tmpCache，这个缓存的最大存储量为10000个元素，如果一个元素空闲时间超过5分钟就会失效并且生命周期超过10分钟。
+	如果超过了10000个元素，磁盘缓存将会溢出，在这个缓存中，这个配置将找到你系统中任何定义java.io.tmp的地方。在标准的Linux系统中，这将会是/tmp"。
+    -->
+    <!--<cache name="tmpCache"-->
+    <!--maxElementsInMemory="10000"-->
+    <!--maxElementsOnDisk="1000"-->
+    <!--eternal="false"-->
+    <!--overflowToDisk="true"-->
+    <!--diskSpoolBufferSizeMB="20"-->
+    <!--timeToIdleSeconds="300"-->
+    <!--timeToLiveSeconds="600"-->
+    <!--memoryStoreEvictionPolicy="LRU"-->
+    <!--/>-->
+
+</ehcache>

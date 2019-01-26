@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL MAP 2.0//EN"
+  "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="SysUser">
+
+<resultMap id="SysUserResult" class="SysUser" >
+    <result property="userId" column="USERID"/>
+    <result property="userName" column="USERNAME"/>
+    <result property="nickname" column="NICKNAME"/>
+    <result property="pwd" column="PWD"/>
+    <result property="status" column="STATUS"/>
+    <result property="userType" column="USERTYPE"/>
+</resultMap>
+
+<select id="searchSysUserByParams" parameterClass="Map" resultMap="SysUserResult">
+    <![CDATA[
+    SELECT
+         USERID,
+         USERNAME,
+         NICKNAME,
+         PWD,
+         STATUS,
+         USERTYPE
+    FROM VW_ALLOW_RPT_SYSUSER
+    ]]>
+    <dynamic prepend="WHERE">
+        <isNotNull prepend="AND" property="userId">
+            <![CDATA[ USERID = #userId# ]]>
+        </isNotNull>
+        <isNotNull prepend="AND" property="userName">
+            <![CDATA[ USERNAME = #userName# ]]>
+        </isNotNull>
+        <isNotNull prepend="AND" property="nickname">
+            <![CDATA[ NICKNAME = #nickname# ]]>
+        </isNotNull>
+        <isNotNull prepend="AND" property="pwd">
+            <![CDATA[ PWD = #pwd# ]]>
+        </isNotNull>
+        <isNotNull prepend="AND" property="usertype">
+            <![CDATA[ USERTYPE = #usertype# ]]>
+        </isNotNull>
+
+    </dynamic>
+
+</select>
+
+<update id="updateSysUserToSys" parameterClass="Map">
+    <![CDATA[   update sysuser set pwd=#confirmpwd# where userid=#userId#  ]]>
+</update>
+
+<update id="updateSysUserToContact" parameterClass="Map">
+    <![CDATA[   update uf_crm_contacter set pwd=#confirmpwd# where requestid=#userId#  ]]>
+</update>
+
+</sqlMap>

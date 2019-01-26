@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+    <!-- some java alias -->
+    <typeAlias alias="String" type="java.lang.String" />
+    <typeAlias alias="Long" type="java.lang.Long" />
+    <typeAlias alias="Integer" type="java.lang.Integer" />
+    <typeAlias alias="Map" type="java.util.Map" />
+    <typeAlias alias="HashMap" type="java.util.HashMap" />
+    <typeAlias alias="List" type="java.util.List" />
+    <typeAlias alias="Clob" type="java.sql.Clob" />
+    <typeAlias alias="Blob" type="java.sql.Blob" />
+    <typeAlias alias="Double" type="java.lang.Double" />
+    <typeAlias alias="Real" type="java.lang.double"/>
+    <typeAlias alias="BigDecimal" type="java.math.BigDecimal" />
+
+    <typeAlias alias="SysUser" type="com.bigdata.bean.SysUser" />
+    <sqlMap resource="com/bigdata/service/impl/SysUserServiceImpl.xml" />
+
+    <typeAlias alias="RptInfo" type="com.bigdata.bean.RptInfo" />
+    <sqlMap resource="com/bigdata/service/impl/RptInfoServiceImpl.xml" />
+</sqlMapConfig>

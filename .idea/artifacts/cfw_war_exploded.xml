@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cfw:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cfw_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cfw" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="cfw_lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="cfw/web/Web" />
+    </root>
+  </artifact>
+</component>

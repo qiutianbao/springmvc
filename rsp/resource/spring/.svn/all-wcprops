@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/resource/spring
+END
+backup_applicationContext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/resource/spring/backup_applicationContext-security.xml
+END
+spring-mvc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/resource/spring/spring-mvc.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/resource/spring/applicationContext.xml
+END
+applicationContext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/resource/spring/applicationContext-security.xml
+END
+framework-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/resource/spring/framework-context.xml
+END

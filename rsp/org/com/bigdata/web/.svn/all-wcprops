@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/km/!svn/ver/8528/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web
+END
+SysDeptController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/SysDeptController.java
+END
+SysUserController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/SysUserController.java
+END
+RandomController.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/km/!svn/ver/8528/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/RandomController.java
+END
+SysRoleController.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/SysRoleController.java
+END
+SysResourceController.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/SysResourceController.java
+END
+IndexController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/IndexController.java
+END
+LoginController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/LoginController.java
+END
+ErrorController.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/web/ErrorController.java
+END

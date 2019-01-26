@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL MAP 2.0//EN"
+  "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<!-- author:jameson.fang created:2013-07-29 22:21:35 version:1.0 -->
+<!--
+	角色资源关系表(SYS_ROLE_RES) :角色资源关系表
+��ݿ�ṹ��:
+	ROLE_ID(VARCHAR2)	:角色ID
+	RES_ID(VARCHAR2)	:资源ID
+	FLAG(CHAR)	:启动标示符
+	CREATE_TIME(TIMESTAMP(6))	:创建时间
+	CREATE_BY(VARCHAR2)	:创建人
+	UDF1(VARCHAR2)	:
+	UDF2(VARCHAR2)	:
+	UDF3(VARCHAR2)	:
+	UDF4(VARCHAR2)	:
+	UDF5(VARCHAR2)	:
+	UDF6(VARCHAR2)	:
+sqlMapConfig:
+	
+-->
+<sqlMap namespace="SysRoleRes">
+
+<parameterMap id="SysRoleResMap" class="SysRoleRes">
+	<parameter property="roleId" javaType="String" />
+	<parameter property="resId" javaType="String" />
+	<parameter property="flag" javaType="String" />
+	<parameter property="createTime" javaType="java.util.Date" />
+	<parameter property="createBy" javaType="String" />
+	<parameter property="udf1" javaType="String" />
+	<parameter property="udf2" javaType="String" />
+	<parameter property="udf3" javaType="String" />
+	<parameter property="udf4" javaType="String" />
+	<parameter property="udf5" javaType="String" />
+	<parameter property="udf6" javaType="String" />
+</parameterMap>
+
+
+<insert id="insertSysRoleRes" parameterClass="SysRoleRes">
+<!--<selectKey resultClass="Integer" keyProperty="roleId">
+	SELECT SYS_ROLE_RES_SEQ.NEXTVAL FROM DUAL
+</selectKey>-->
+<![CDATA[
+INSERT INTO SYS_ROLE_RES (
+ ROLE_ID,
+ RES_ID,
+ FLAG,
+ CREATE_TIME,
+ CREATE_BY,
+ UDF1,
+ UDF2,
+ UDF3,
+ UDF4,
+ UDF5,
+ UDF6
+)VALUES(
+ 	#roleId:VARCHAR#,
+ 	#resId:VARCHAR#,
+ 	#flag:VARCHAR#,
+	#createTime:TIMESTAMP#,
+	#createBy:VARCHAR#,
+	#udf1:VARCHAR#,
+	#udf2:VARCHAR#,
+	#udf3:VARCHAR#,
+	#udf4:VARCHAR#,
+	#udf5:VARCHAR#,
+	#udf6:VARCHAR#
+)
+]]>
+</insert>
+
+<resultMap id="SysRoleResResult" class="SysRoleRes" >
+  <result property="roleId" column="ROLE_ID"/>
+  <result property="resId" column="RES_ID"/>
+  <result property="flag" column="FLAG"/>
+  <result property="createTime" column="CREATE_TIME"/>
+  <result property="createBy" column="CREATE_BY"/>
+  <result property="udf1" column="UDF1"/>
+  <result property="udf2" column="UDF2"/>
+  <result property="udf3" column="UDF3"/>
+  <result property="udf4" column="UDF4"/>
+  <result property="udf5" column="UDF5"/>
+  <result property="udf6" column="UDF6"/>
+  
+  <result property="roleCode" column="ROLE_CODE"/>
+  <result property="roleName" column="ROLE_NAME"/>
+  <result property="resName" column="RES_NAME"/>
+  <result property="resType" column="RES_TYPE"/>
+       
+</resultMap>
+
+
+
+
+<update id="updateSysRoleRes" parameterClass="SysRoleRes">
+<![CDATA[
+UPDATE SYS_ROLE_RES SET ]]>
+<isNotNull prepend="," property="resId">	
+	<![CDATA[ RES_ID = #resId# ]]>
+</isNotNull>
+<isNotNull prepend="," property="flag">	
+	<![CDATA[ FLAG = #flag# ]]>
+</isNotNull>
+<isNotNull prepend="," property="createTime">	
+	<![CDATA[ CREATE_TIME = #createTime# ]]>
+</isNotNull>
+<isNotNull prepend="," property="createBy">	
+	<![CDATA[ CREATE_BY = #createBy# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf1">	
+	<![CDATA[ UDF1 = #udf1# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf2">	
+	<![CDATA[ UDF2 = #udf2# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf3">	
+	<![CDATA[ UDF3 = #udf3# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf4">	
+	<![CDATA[ UDF4 = #udf4# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf5">	
+	<![CDATA[ UDF5 = #udf5# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf6">	
+	<![CDATA[ UDF6 = #udf6# ]]>
+</isNotNull>
+<![CDATA[ WHERE ROLE_ID = #roleId#
+]]>
+</update>
+
+<delete id="deleteSysRoleRes" parameterClass="Map">
+<![CDATA[
+DELETE FROM SYS_ROLE_RES 
+	WHERE roleId = #roleId#
+]]>
+</delete>
+
+<delete id="deleteSysRoleResByResId" parameterClass="String">
+<![CDATA[
+DELETE FROM SYS_ROLE_RES 
+	WHERE RES_ID = #value#
+]]>
+</delete>
+
+<delete id="deleteSysRoleResByRoleIdAndResId" parameterClass="Map">
+<![CDATA[
+DELETE FROM SYS_ROLE_RES
+	WHERE ROLE_ID = #roleId#
+	AND RES_ID=#resId#
+]]>
+</delete>
+
+<select id="searchSysRoleResByParams" parameterClass="Map" resultMap="SysRoleResResult">
+<![CDATA[
+
+SELECT S1.ROLE_ID,
+       S1.RES_ID,
+       S1.FLAG,
+       S1.CREATE_TIME,
+       S1.CREATE_BY,
+       S1.UDF1,
+       S1.UDF2,
+       S1.UDF3,
+       S1.UDF4,
+       S1.UDF5,
+       S1.UDF6,
+       
+       S2.ROLE_CODE,
+       S2.ROLE_NAME,
+       S3.RES_NAME,
+       S3.RES_TYPE
+       
+  FROM SYS_ROLE_RES S1
+  LEFT JOIN SYS_ROLE S2
+    ON S1.ROLE_ID = S2.ROLE_ID
+  LEFT JOIN SYS_RESOURCE S3
+    ON S1.RES_ID = S3.RES_ID
+]]>
+<dynamic prepend="WHERE">
+ <isNotNull prepend="AND" property="roleId">
+  <![CDATA[ S1.ROLE_ID LIKE #roleId# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resId">
+  <![CDATA[ S1.RES_ID LIKE #resId# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="flag">
+  <![CDATA[ S1.FLAG LIKE #flag# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="createTimeAfter">
+  <![CDATA[ S1.CREATE_TIME >= #createTimeAfter# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="createTimeBefor">
+  <![CDATA[ S1.CREATE_TIME <= #createTimeBefor# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="createBy">
+  <![CDATA[ S1.CREATE_BY LIKE #createBy# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf1">
+  <![CDATA[ S1.UDF1 LIKE #udf1# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf2">
+  <![CDATA[ S1.UDF2 LIKE #udf2# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf3">
+  <![CDATA[ S1.UDF3 LIKE #udf3# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf4">
+  <![CDATA[ S1.UDF4 LIKE #udf4# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf5">
+  <![CDATA[ S1.UDF5 LIKE #udf5# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf6">
+  <![CDATA[ S1.UDF6 LIKE #udf6# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf6">
+  <![CDATA[ S1.UDF6 LIKE #udf6# ]]>
+ </isNotNull>
+</dynamic>
+<isNotNull property="orderBy">	
+ ORDER BY $orderBy$
+</isNotNull>
+</select>
+
+</sqlMap>

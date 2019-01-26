@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL MAP 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="RptInfo">
+
+    <resultMap id="searchRptInfoByParamsByPage" class="RptInfo" >
+        <result property="id" column="ID"/>
+        <result property="requestid" column="REQUESTID"/>
+        <result property="rpt_title" column="RPT_TITLE"/>
+        <result property="rpt_authors" column="RPT_AUTHORS"/>
+        <result property="rpt_date" column="RPT_DATE"/>
+        <result property="secu_sht" column="SECU_SHT"/>
+        <result property="rpt_type" column="RPT_TYPE"/>
+        <result property="rpt_indu" column="RPT_INDU"/>
+        <result property="counter_see" column="COUNTER_SEE"/>
+        <result property="counter_download" column="COUNTER_DOWNLOAD"/>
+    </resultMap>
+
+
+    <select id="searchRptInfoByParams" parameterClass="Map" resultMap="searchRptInfoByParamsByPage">
+        <![CDATA[
+        SELECT *
+            FROM (SELECT B.*, ROWNUM PAGENUMBER FROM (
+                SELECT ID,
+                       REQUESTID,
+                       RPT_TITLE,
+                       RPT_AUTHORS,
+                       RPT_DATE,
+                       SECU_SHT,
+                       RPT_TYPE,
+                       RPT_INDU,
+                       COUNTER_SEE,
+                       COUNTER_DOWNLOAD
+                  FROM VW_RPTINFO
+                ]]>
+        <dynamic prepend="WHERE">
+
+            <isNotNull prepend="AND" property="rpt_date_begin">
+                <![CDATA[ RPT_DATE >= #rpt_date_begin# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_date_end">
+                <![CDATA[ RPT_DATE <= #rpt_date_end# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_authors">
+                <![CDATA[ RPT_AUTHORS like #rpt_authors# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_indu">
+                <![CDATA[ RPT_INDU like #rpt_indu# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_stk_name_code">
+                <![CDATA[ (SECU_SHT like #rpt_stk_name_code# or TRAD_COD like #rpt_stk_name_code#) ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="fromHotRptIndex">
+                <![CDATA[ to_date(RPT_DATE,'yyyy-mm-dd')>sysdate-190 ]]>
+            </isNotNull>
+            <isNull prepend="AND" property="fromHotRptIndex">
+                <![CDATA[
+                        exists (select * from uf_report_contact_type w where w.rpt_typ_id=rpt_typid and w.contact_id=#contact_id#)
+                        ]]>
+            </isNull>
+
+        </dynamic>
+        <isNotNull property="orderBy">
+            ORDER BY $orderBy$
+        </isNotNull>
+        <![CDATA[
+            ) B) A WHERE PAGENUMBER > #start# AND PAGENUMBER <= #end#
+        ]]>
+    </select>
+
+    <select id="searchRptInfoByParamsCount" parameterClass="Map" resultClass="String">
+        <![CDATA[
+                SELECT Count(1)
+                      from VW_RptInfo
+        ]]>
+        <dynamic prepend="WHERE">
+            <isNotNull prepend="AND" property="rpt_date_begin">
+                <![CDATA[ RPT_DATE >= #rpt_date_begin# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_date_end">
+                <![CDATA[ RPT_DATE <= #rpt_date_end# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_authors">
+                <![CDATA[ RPT_AUTHORS like #rpt_authors# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_indu">
+                <![CDATA[ RPT_INDU like #rpt_indu# ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="rpt_stk_name_code">
+                <![CDATA[ (SECU_SHT like #rpt_stk_name_code# or TRAD_COD like #rpt_stk_name_code#) ]]>
+            </isNotNull>
+            <isNotNull prepend="AND" property="fromHotRptIndex">
+                <![CDATA[ to_date(RPT_DATE,'yyyy-mm-dd')>sysdate-190 ]]>
+            </isNotNull>
+
+            <isNull prepend="AND" property="fromHotRptIndex">
+                <![CDATA[
+                        exists (select * from uf_report_contact_type w where w.rpt_typ_id=rpt_typid and w.contact_id=#contact_id#)
+                        ]]>
+            </isNull>
+        </dynamic>
+    </select>
+
+
+    <select id="searchRptInfoById" parameterClass="Map" resultClass="RptInfo">
+        <![CDATA[
+                SELECT
+                    ID,REQUESTID,RPT_TITLE,RPT_DATE,FINISH_TIME,SECU_SHT,RPT_TYPE,RPT_AUTHORS,RPT_SUMMARY,ATTACH_ID,ATTACH_NAME,ATTACH_DIR,RPT_INDU
+                      from VW_RptInfo
+                      where id=#id#
+        ]]>
+    </select>
+    
+    
+    <insert id="insertReportCounter" parameterClass="Map">
+        <![CDATA[
+                INSERT INTO UF_M_REPORTCOUNTER (ID,USERID,OPERATETYPE,CRT_DATE) VALUES(#id#,#userId#,#operatetype#,SYSDATE)
+                ]]>
+    </insert>
+
+</sqlMap>

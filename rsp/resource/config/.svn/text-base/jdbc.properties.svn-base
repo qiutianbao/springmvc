@@ -1,0 +1,50 @@
+
+## mysql
+#driverClass=com.mysql.jdbc.Driver
+#jdbcUrl=jdbc:mysql://localhost:3306/bigdata?useUnicode=true&amp;characterEncoding=utf-8
+#user=root
+#password=123456
+
+## sqlserver
+#driverClass=com.microsoft.sqlserver.jdbc.SQLServerDriver
+#jdbcUrl=jdbc:sqlserver://localhost:1433;DatabaseName=bigdata
+#user=sa
+#password=123456
+
+## oracle
+#driverClass=oracle.jdbc.driver.OracleDriver
+#jdbcUrl=jdbc:oracle:thin:@10.7.130.109:1521:orcl
+#user=bd_axkm
+#password=bd_axkm
+
+
+## oracle
+#db.driver=oracle.jdbc.driver.OracleDriver
+#db.url=jdbc:oracle:thin:@127.0.0.1:1521:ORCL
+#db.user=local_xy
+#db.password=local_xy
+
+#db.url=jdbc:oracle:thin:@192.168.15.150:1521:KMDB
+#db.user=bd_gjkm
+#db.password=bd_gjkm
+
+db.driver=oracle.jdbc.driver.OracleDriver
+db.url=jdbc:oracle:thin:@10.7.130.109:1521:ORCL
+db.user=bd_axkm
+db.password=bd_axkm
+
+db.max=200
+db.min=20
+db.maximumActiveTime=900000
+
+
+##数据库连接词配置
+acquireIncrement=3
+idleConnectionTestPeriod=120
+initialPoolSize=3
+minPoolSize=3
+maxPoolSize=15
+numHelperThreads=3
+preferredTestQuery=select 1
+
+

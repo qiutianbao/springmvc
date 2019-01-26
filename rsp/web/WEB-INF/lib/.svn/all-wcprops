@@ -1,0 +1,623 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib
+END
+org.springframework.instrument.tomcat-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.instrument.tomcat-sources-3.1.4.RELEASE.jar
+END
+waveFrameworkDao.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/waveFrameworkDao.jar
+END
+org.springframework.asm-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.asm-3.1.4.RELEASE.jar
+END
+oracle-jdbc-10201.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/oracle-jdbc-10201.jar
+END
+org.springframework.web.servlet-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web.servlet-sources-3.1.4.RELEASE.jar
+END
+com.springsource.net.sf.cglib-2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.net.sf.cglib-2.2.0.jar
+END
+slf4j-log4j12-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/slf4j-log4j12-1.6.6.jar
+END
+org.springframework.context-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.context-3.1.4.RELEASE.jar
+END
+org.springframework.oxm-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.oxm-sources-3.1.4.RELEASE.jar
+END
+spring-security-remoting-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-remoting-3.1.4.RELEASE.jar
+END
+org.springframework.transaction-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.transaction-3.1.4.RELEASE.jar
+END
+org.springframework.web.portlet-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web.portlet-sources-3.1.4.RELEASE.jar
+END
+org.springframework.core-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.core-3.1.4.RELEASE.jar
+END
+commons-dbcp-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-dbcp-1.4.jar
+END
+commons-io-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/km/!svn/ver/7892/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-io-2.4.jar
+END
+org.springframework.web-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web-sources-3.1.4.RELEASE.jar
+END
+org.springframework.expression-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.expression-3.1.4.RELEASE.jar
+END
+commons-pool-1.5.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-pool-1.5.4.jar
+END
+org.springframework.asm-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.asm-sources-3.1.4.RELEASE.jar
+END
+spring-security-aspects-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-aspects-3.1.4.RELEASE.jar
+END
+woodstox-core-asl-4.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/woodstox-core-asl-4.2.0.jar
+END
+org.springframework.context-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.context-sources-3.1.4.RELEASE.jar
+END
+commons-fileupload-1.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-fileupload-1.2.2.jar
+END
+org.springframework.transaction-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.transaction-sources-3.1.4.RELEASE.jar
+END
+org.springframework.core-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.core-sources-3.1.4.RELEASE.jar
+END
+jackson-mapper-asl-1.9.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/jackson-mapper-asl-1.9.7.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/log4j-1.2.16.jar
+END
+javax.servlet.jsp.jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/km/!svn/ver/7892/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/javax.servlet.jsp.jstl.jar
+END
+log4j-1.2.17.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/log4j-1.2.17.jar
+END
+spring-security-openid-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-openid-3.1.4.RELEASE.jar
+END
+org.springframework.expression-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.expression-sources-3.1.4.RELEASE.jar
+END
+jackson-core-asl-1.9.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/jackson-core-asl-1.9.7.jar
+END
+spring-security-crypto-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-crypto-3.1.4.RELEASE.jar
+END
+org.springframework.web.struts-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web.struts-3.1.4.RELEASE.jar
+END
+spring-security-taglibs-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-taglibs-3.1.4.RELEASE.jar
+END
+jstl-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/jstl-impl.jar
+END
+quartz-jobs-2.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/km/!svn/ver/7892/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/quartz-jobs-2.2.1.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/mail.jar
+END
+org.springframework.orm-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.orm-3.1.4.RELEASE.jar
+END
+cglib-nodep-2.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/cglib-nodep-2.2.3.jar
+END
+org.springframework.context.support-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.context.support-3.1.4.RELEASE.jar
+END
+cxf-manifest.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/cxf-manifest.jar
+END
+org.springframework.web.struts-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web.struts-sources-3.1.4.RELEASE.jar
+END
+spring-security-config-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-config-3.1.4.RELEASE.jar
+END
+org.springframework.instrument-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.instrument-3.1.4.RELEASE.jar
+END
+com.springsource.org.apache.commons.logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.org.apache.commons.logging-1.1.1.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/activation.jar
+END
+proxool.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/proxool.jar
+END
+spring-security-web-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-web-3.1.4.RELEASE.jar
+END
+cxf-2.7.10.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/cxf-2.7.10.jar
+END
+org.springframework.orm-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.orm-sources-3.1.4.RELEASE.jar
+END
+org.springframework.aop-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.aop-3.1.4.RELEASE.jar
+END
+commons-beanutils-1.8.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-beanutils-1.8.3.jar
+END
+org.springframework.context.support-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.context.support-sources-3.1.4.RELEASE.jar
+END
+gson-2.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/gson-2.2.2.jar
+END
+spring-security-ldap-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-ldap-3.1.4.RELEASE.jar
+END
+ehcache-core-2.3.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/ehcache-core-2.3.2.jar
+END
+stax2-api-3.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/stax2-api-3.1.1.jar
+END
+c3p0-0.9.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/c3p0-0.9.1.1.jar
+END
+joda-time-2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/joda-time-2.3.jar
+END
+wsdl4j-1.6.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/wsdl4j-1.6.3.jar
+END
+commons-lang3-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-lang3-3.1.jar
+END
+spring-security-core-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-core-3.1.4.RELEASE.jar
+END
+org.springframework.beans-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.beans-3.1.4.RELEASE.jar
+END
+org.springframework.instrument-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.instrument-sources-3.1.4.RELEASE.jar
+END
+org.springframework.jms-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.jms-3.1.4.RELEASE.jar
+END
+jsf-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/jsf-impl.jar
+END
+org.springframework.aop-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.aop-sources-3.1.4.RELEASE.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/km/!svn/ver/7892/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-collections-3.2.1.jar
+END
+org.springframework.jdbc-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.jdbc-3.1.4.RELEASE.jar
+END
+org.springframework.aspects-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.aspects-3.1.4.RELEASE.jar
+END
+ibatis-2.3.0.677.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/ibatis-2.3.0.677.jar
+END
+org.springframework.beans-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.beans-sources-3.1.4.RELEASE.jar
+END
+com.springsource.org.apache.commons.fileupload-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.org.apache.commons.fileupload-1.2.0.jar
+END
+org.springframework.jms-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.jms-sources-3.1.4.RELEASE.jar
+END
+commons-net-3.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-net-3.3.jar
+END
+xmlschema-core-2.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/xmlschema-core-2.1.0.jar
+END
+org.springframework.test-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.test-3.1.4.RELEASE.jar
+END
+mybatis-3.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/mybatis-3.1.1.jar
+END
+com.springsource.org.apache.log4j-1.2.15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.org.apache.log4j-1.2.15.jar
+END
+org.springframework.jdbc-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.jdbc-sources-3.1.4.RELEASE.jar
+END
+org.springframework.aspects-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.aspects-sources-3.1.4.RELEASE.jar
+END
+neethi-3.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/neethi-3.0.3.jar
+END
+com.jcraft.jsch_0.1.31.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.jcraft.jsch_0.1.31.jar
+END
+asm-3.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/asm-3.3.1.jar
+END
+org.springframework.instrument.tomcat-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.instrument.tomcat-3.1.4.RELEASE.jar
+END
+quartz-2.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/km/!svn/ver/7892/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/quartz-2.2.1.jar
+END
+spring-security-acl-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-acl-3.1.4.RELEASE.jar
+END
+org.springframework.test-sources-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.test-sources-3.1.4.RELEASE.jar
+END
+org.springframework.web.servlet-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web.servlet-3.1.4.RELEASE.jar
+END
+com.springsource.org.aopalliance-1.0.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/km/!svn/ver/7892/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.org.aopalliance-1.0.0.jar
+END
+org.springframework.oxm-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.oxm-3.1.4.RELEASE.jar
+END
+jsf-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/jsf-api.jar
+END
+com.springsource.org.apache.commons.httpclient-3.1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.org.apache.commons.httpclient-3.1.0.jar
+END
+org.springframework.web.portlet-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web.portlet-3.1.4.RELEASE.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-lang-2.4.jar
+END
+spring-security-cas-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/spring-security-cas-3.1.4.RELEASE.jar
+END
+com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar
+END
+commons-logging-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-logging-1.0.4.jar
+END
+servlet-api-2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/servlet-api-2.5.jar
+END
+commons-email-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/commons-email-1.2.jar
+END
+slf4j-api-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/slf4j-api-1.6.6.jar
+END
+org.springframework.web-3.1.4.RELEASE.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/web/WEB-INF/lib/org.springframework.web-3.1.4.RELEASE.jar
+END

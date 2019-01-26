@@ -1,0 +1,42 @@
+/**---------
+the toolbar of the grid  2011-08-08		cheney 
+--------*/ /*add button*/
+.add {
+	background: url(../images/grid/add.png) no-repeat center left;
+}
+
+.modify {
+	background: url(../images/grid/add.png) no-repeat center left;
+}
+
+/*delete button*/
+.delete {
+	background: url(../images/grid/close.png) no-repeat center left;
+}
+
+/*edit button*/
+.edit {
+	background: url(../images/grid/edit.png) no-repeat center left;
+}
+
+/*detail button*/
+.detail {
+	background: url(../images/grid/detail.png) no-repeat center left;
+}
+.save {
+	background: url(../images/grid/btnSave.gif) no-repeat center left;
+}
+.reaset {
+	background: url(../images/grid/reaset.png) no-repeat center left;
+}
+.start {
+	background: url(../images/grid/start.png) no-repeat center left;
+}
+.pause {
+	background: url(../images/grid/pause_blue.png) no-repeat center left;
+}
+
+/*download button*/
+.download {
+	background: url(../images/grid/download.png) no-repeat center left;
+}

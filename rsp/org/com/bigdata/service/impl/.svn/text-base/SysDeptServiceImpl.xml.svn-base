@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL MAP 2.0//EN"
+  "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<!-- author:jameson.fang created:2013-09-10 23:25:47 version:1.0 -->
+<!--
+	部门(SYS_DEPT) :部门
+��ݿ�ṹ��:
+	DEPT_ID(VARCHAR2)	:部门ID
+	DEPT_NAME(VARCHAR2)	:部门名称
+	DEPT_ABBR_NAME(VARCHAR2)	:部门简称
+	DEPT_CODE(VARCHAR2)	:部门编码
+	DEPT_PARENT_ID(VARCHAR2)	:部门父ID
+	DEPT_TYPE(CHAR)	:部门类型
+	DEPT_SEQ_NUM(NUMBER)	:排序
+	DEPT_LEVEL(NUMBER)	:部门级别
+	DEPT_MANAGE_BY(VARCHAR2)	:部门负责人
+	DEPT_MANAGE_NAME(VARCHAR2)	:部门负责人名称
+	DEPT_CREATE_BY(VARCHAR2)	:创建人
+	DEPT_CREATE_NAME(VARCHAR2)	:创建人名称
+	DEPT_UPDATE_TIME(TIMESTAMP(6))	:创建时间
+	DEPT_UPDATE_BY(VARCHAR2)	:更新人
+	DEPT_UPDATE_NAME(VARCHAR2)	:更新人名称
+	DEPT_STATUS(CHAR)	:状态
+	UDF1(VARCHAR2)	:
+	UDF2(VARCHAR2)	:
+	UDF3(VARCHAR2)	:
+	UDF4(VARCHAR2)	:
+	UDF5(VARCHAR2)	:
+	UDF6(VARCHAR2)	:
+sqlMapConfig:
+	<typeAlias alias="SysDept" type="SysDept" />
+	<sqlMap resource="com/wave/service/impl/SysDeptServiceImpl.xml" />
+-->
+<sqlMap namespace="SysDept">
+
+<parameterMap id="SysDeptMap" class="SysDept">
+	<parameter property="deptId" javaType="String" />
+	<parameter property="deptName" javaType="String" />
+	<parameter property="deptAbbrName" javaType="String" />
+	<parameter property="deptCode" javaType="String" />
+	<parameter property="deptParentId" javaType="String" />
+	<parameter property="deptType" javaType="String" />
+	<parameter property="deptSeqNum" javaType="Integer" />
+	<parameter property="deptLevel" javaType="Integer" />
+	<parameter property="deptManageBy" javaType="String" />
+	<parameter property="deptManageName" javaType="String" />
+	<parameter property="deptCreateBy" javaType="String" />
+	<parameter property="deptCreateName" javaType="String" />
+	<parameter property="deptUpdateTime" javaType="java.util.Date" />
+	<parameter property="deptUpdateBy" javaType="String" />
+	<parameter property="deptUpdateName" javaType="String" />
+	<parameter property="deptStatus" javaType="String" />
+	<parameter property="udf1" javaType="String" />
+	<parameter property="udf2" javaType="String" />
+	<parameter property="udf3" javaType="String" />
+	<parameter property="udf4" javaType="String" />
+	<parameter property="udf5" javaType="String" />
+	<parameter property="udf6" javaType="String" />
+</parameterMap>
+
+
+<insert id="insertSysDept" parameterMap="SysDeptMap">
+<!--<selectKey resultClass="Integer" keyProperty="deptId">
+	SELECT SYS_DEPT_SEQ.NEXTVAL FROM DUAL
+</selectKey>-->
+<![CDATA[
+INSERT INTO SYS_DEPT (
+ DEPT_ID,
+ DEPT_NAME,
+ DEPT_ABBR_NAME,
+ DEPT_CODE,
+ DEPT_PARENT_ID,
+ DEPT_TYPE,
+ DEPT_SEQ_NUM,
+ DEPT_LEVEL,
+ DEPT_MANAGE_BY,
+ DEPT_MANAGE_NAME,
+ DEPT_CREATE_BY,
+ DEPT_CREATE_NAME,
+ DEPT_UPDATE_TIME,
+ DEPT_UPDATE_BY,
+ DEPT_UPDATE_NAME,
+ DEPT_STATUS,
+ UDF1,
+ UDF2,
+ UDF3,
+ UDF4,
+ UDF5,
+ UDF6
+)VALUES(
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?,
+ ?
+)
+]]>
+</insert>
+
+<resultMap id="SysDeptResult" class="SysDept" groupBy="deptId">
+  <result property="deptId" column="DEPT_ID"/>
+  <result property="deptName" column="DEPT_NAME"/>
+  <result property="deptAbbrName" column="DEPT_ABBR_NAME"/>
+  <result property="deptCode" column="DEPT_CODE"/>
+  <result property="deptParentId" column="DEPT_PARENT_ID"/>
+  <result property="deptType" column="DEPT_TYPE"/>
+  <result property="deptSeqNum" column="DEPT_SEQ_NUM"/>
+  <result property="deptLevel" column="DEPT_LEVEL"/>
+  <result property="deptManageBy" column="DEPT_MANAGE_BY"/>
+  <result property="deptManageName" column="DEPT_MANAGE_NAME"/>
+  <result property="deptCreateBy" column="DEPT_CREATE_BY"/>
+  <result property="deptCreateName" column="DEPT_CREATE_NAME"/>
+  <result property="deptUpdateTime" column="DEPT_UPDATE_TIME"/>
+  <result property="deptUpdateBy" column="DEPT_UPDATE_BY"/>
+  <result property="deptUpdateName" column="DEPT_UPDATE_NAME"/>
+  <result property="deptStatus" column="DEPT_STATUS"/>
+  <result property="udf1" column="UDF1"/>
+  <result property="udf2" column="UDF2"/>
+  <result property="udf3" column="UDF3"/>
+  <result property="udf4" column="UDF4"/>
+  <result property="udf5" column="UDF5"/>
+  <result property="udf6" column="UDF6"/>
+</resultMap>
+
+<resultMap id="SysDeptResultByParentId" class="SysDept" >
+  <result property="deptId" column="DEPT_ID"/>
+  <result property="deptName" column="DEPT_NAME"/>
+  <result property="deptAbbrName" column="DEPT_ABBR_NAME"/>
+  <result property="deptCode" column="DEPT_CODE"/>
+  <result property="deptParentId" column="DEPT_PARENT_ID"/>
+  <result property="deptType" column="DEPT_TYPE"/>
+  <result property="deptSeqNum" column="DEPT_SEQ_NUM"/>
+  <result property="deptLevel" column="DEPT_LEVEL"/>
+  <result property="deptManageBy" column="DEPT_MANAGE_BY"/>
+  <result property="deptManageName" column="DEPT_MANAGE_NAME"/>
+  <result property="deptCreateBy" column="DEPT_CREATE_BY"/>
+  <result property="deptCreateName" column="DEPT_CREATE_NAME"/>
+  <result property="deptUpdateTime" column="DEPT_UPDATE_TIME"/>
+  <result property="deptUpdateBy" column="DEPT_UPDATE_BY"/>
+  <result property="deptUpdateName" column="DEPT_UPDATE_NAME"/>
+  <result property="deptStatus" column="DEPT_STATUS"/>
+  <result property="udf1" column="UDF1"/>
+  <result property="udf2" column="UDF2"/>
+  <result property="udf3" column="UDF3"/>
+  <result property="udf4" column="UDF4"/>
+  <result property="udf5" column="UDF5"/>
+  <result property="udf6" column="UDF6"/>
+  <result property="countSub" column="COUNT_SUB"/>
+</resultMap>
+
+
+
+<update id="updateSysDept" parameterClass="SysDept">
+<![CDATA[
+UPDATE SYS_DEPT  ]]>
+<dynamic prepend="SET">
+<isNotNull prepend="," property="deptName">	
+	<![CDATA[ DEPT_NAME = #deptName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptAbbrName">	
+	<![CDATA[ DEPT_ABBR_NAME = #deptAbbrName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptCode">	
+	<![CDATA[ DEPT_CODE = #deptCode# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptParentId">	
+	<![CDATA[ DEPT_PARENT_ID = #deptParentId# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptType">	
+	<![CDATA[ DEPT_TYPE = #deptType# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptSeqNum">	
+	<![CDATA[ DEPT_SEQ_NUM = #deptSeqNum# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptLevel">	
+	<![CDATA[ DEPT_LEVEL = #deptLevel# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptManageBy">	
+	<![CDATA[ DEPT_MANAGE_BY = #deptManageBy# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptManageName">	
+	<![CDATA[ DEPT_MANAGE_NAME = #deptManageName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptCreateBy">	
+	<![CDATA[ DEPT_CREATE_BY = #deptCreateBy# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptCreateName">	
+	<![CDATA[ DEPT_CREATE_NAME = #deptCreateName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptUpdateTime">	
+	<![CDATA[ DEPT_UPDATE_TIME = #deptUpdateTime# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptUpdateBy">	
+	<![CDATA[ DEPT_UPDATE_BY = #deptUpdateBy# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptUpdateName">	
+	<![CDATA[ DEPT_UPDATE_NAME = #deptUpdateName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="deptStatus">	
+	<![CDATA[ DEPT_STATUS = #deptStatus# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf1">	
+	<![CDATA[ UDF1 = #udf1# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf2">	
+	<![CDATA[ UDF2 = #udf2# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf3">	
+	<![CDATA[ UDF3 = #udf3# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf4">	
+	<![CDATA[ UDF4 = #udf4# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf5">	
+	<![CDATA[ UDF5 = #udf5# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf6">	
+	<![CDATA[ UDF6 = #udf6# ]]>
+</isNotNull>
+</dynamic>
+<![CDATA[ WHERE DEPT_ID = #deptId#
+]]>
+</update>
+
+<delete id="deleteSysDept" parameterClass="Map">
+<![CDATA[
+DELETE FROM SYS_DEPT 
+WHERE deptId = #deptId#
+]]>
+</delete>
+
+<select id="searchSysDeptsByParentId" parameterClass="Map" resultMap="SysDeptResultByParentId">
+<![CDATA[
+SELECT
+ d1.DEPT_ID,
+ d1.DEPT_NAME,
+ d1.DEPT_ABBR_NAME,
+ d1.DEPT_CODE,
+ d1.DEPT_PARENT_ID,
+ d1.DEPT_TYPE,
+ d1.DEPT_SEQ_NUM,
+ d1.DEPT_LEVEL,
+ d1.DEPT_MANAGE_BY,
+ d1.DEPT_MANAGE_NAME,
+ d1.DEPT_CREATE_BY,
+ d1.DEPT_CREATE_NAME,
+ d1.DEPT_UPDATE_TIME,
+ d1.DEPT_UPDATE_BY,
+ d1.DEPT_UPDATE_NAME,
+ d1.DEPT_STATUS,
+ d1.UDF1,
+ d1.UDF2,
+ d1.UDF3,
+ d1.UDF4,
+ d1.UDF5,
+ d1.UDF6,
+ (select count(d2.dept_id) from sys_dept d2 where d2.dept_parent_id=d1.dept_id ]]>
+ 	 <isNotNull prepend="AND" property="deptStatus">
+	  	<![CDATA[ d2.dept_status=#deptStatus#]]>
+	 </isNotNull>
+ ) as COUNT_SUB 
+ <![CDATA[
+	FROM SYS_DEPT d1 where d1.dept_parent_id=#deptParentId#
+]]>
+ 	 <isNotNull prepend="AND" property="deptStatus">
+	  	<![CDATA[ d1.dept_status=#deptStatus# ]]>
+	 </isNotNull>
+</select>
+
+<select id="searchSysDeptByParams" parameterClass="Map" resultMap="SysDeptResult">
+<![CDATA[
+SELECT
+ DEPT_ID,
+ DEPT_NAME,
+ DEPT_ABBR_NAME,
+ DEPT_CODE,
+ DEPT_PARENT_ID,
+ DEPT_TYPE,
+ DEPT_SEQ_NUM,
+ DEPT_LEVEL,
+ DEPT_MANAGE_BY,
+ DEPT_MANAGE_NAME,
+ DEPT_CREATE_BY,
+ DEPT_CREATE_NAME,
+ DEPT_UPDATE_TIME,
+ DEPT_UPDATE_BY,
+ DEPT_UPDATE_NAME,
+ DEPT_STATUS,
+ UDF1,
+ UDF2,
+ UDF3,
+ UDF4,
+ UDF5,
+ UDF6 
+FROM SYS_DEPT
+]]>
+<dynamic prepend="WHERE">
+ <isNotNull prepend="AND" property="deptId">
+  <![CDATA[ DEPT_ID LIKE #deptId# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptName">
+  <![CDATA[ DEPT_NAME LIKE #deptName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptAbbrName">
+  <![CDATA[ DEPT_ABBR_NAME LIKE #deptAbbrName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptCode">
+  <![CDATA[ DEPT_CODE LIKE #deptCode# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptParentId">
+  <![CDATA[ DEPT_PARENT_ID LIKE #deptParentId# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptType">
+  <![CDATA[ DEPT_TYPE LIKE #deptType# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptSeqNum">	
+ <![CDATA[ DEPT_SEQ_NUM = #deptSeqNum# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptLevel">	
+ <![CDATA[ DEPT_LEVEL = #deptLevel# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptManageBy">
+  <![CDATA[ DEPT_MANAGE_BY LIKE #deptManageBy# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptManageName">
+  <![CDATA[ DEPT_MANAGE_NAME LIKE #deptManageName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptCreateBy">
+  <![CDATA[ DEPT_CREATE_BY LIKE #deptCreateBy# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptCreateName">
+  <![CDATA[ DEPT_CREATE_NAME LIKE #deptCreateName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptUpdateTimeAfter">
+  <![CDATA[ DEPT_UPDATE_TIME >= #deptUpdateTimeAfter# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptUpdateTimeBefor">
+  <![CDATA[ DEPT_UPDATE_TIME <= #deptUpdateTimeBefor# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptUpdateBy">
+  <![CDATA[ DEPT_UPDATE_BY LIKE #deptUpdateBy# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptUpdateName">
+  <![CDATA[ DEPT_UPDATE_NAME LIKE #deptUpdateName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="deptStatus">
+  <![CDATA[ DEPT_STATUS LIKE #deptStatus# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf1">
+  <![CDATA[ UDF1 LIKE #udf1# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf2">
+  <![CDATA[ UDF2 LIKE #udf2# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf3">
+  <![CDATA[ UDF3 LIKE #udf3# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf4">
+  <![CDATA[ UDF4 LIKE #udf4# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf5">
+  <![CDATA[ UDF5 LIKE #udf5# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf6">
+  <![CDATA[ UDF6 LIKE #udf6# ]]>
+ </isNotNull>
+</dynamic>
+<isNotNull property="orderBy">	
+ ORDER BY $orderBy$
+</isNotNull>
+</select>
+
+<select id="searchDeptInfoFormInitiallyOpen" resultClass="String">
+<![CDATA[
+SELECT
+  D.DEPT_ID
+FROM
+  SYS_DEPT D
+WHERE
+  D.DEPT_PARENT_ID = '-1'
+]]>
+</select>
+
+</sqlMap>

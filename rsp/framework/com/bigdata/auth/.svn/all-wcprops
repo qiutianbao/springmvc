@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth
+END
+WaveFilterSecurityInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth/WaveFilterSecurityInterceptor.java
+END
+WaveAuthUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth/WaveAuthUtil.java
+END
+WaveUserDetailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth/WaveUserDetailService.java
+END
+WaveDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth/WaveDetails.java
+END
+WaveInitAuthSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth/WaveInitAuthSource.java
+END
+WaveAccessDecisionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/framework/com/bigdata/auth/WaveAccessDecisionManager.java
+END

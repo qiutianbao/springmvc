@@ -1,0 +1,41 @@
+#Log4j\u914D\u7F6E
+log4j.rootLogger=DEBUG, stdout , logfile
+
+#appender config:stdout
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} [%c:%p] %m%n
+
+#appender config:logfile
+# log file arrcoss file size
+#log4j.appender.logfile=org.apache.log4j.RollingFileAppender
+#log4j.appender.logfile.maxFileSize=10240KB
+#log4j.appender.logfile.MaxBackupIndex = 10
+
+# a file everyday
+log4j.appender.logfile=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.logfile.File=C:/logs/oa
+log4j.appender.logfile.ImmediateFlush=true
+log4j.appender.logfile.Threshold=ERROR,DEBUG
+log4j.appender.logfile.Append=true
+log4j.appender.logfile.DatePattern='_'yyyy-MM-dd'.log'
+log4j.appender.logfile.layout=org.apache.log4j.PatternLayout
+log4j.appender.logfile.layout.ConversionPattern=%-d{yyyy-MM-dd HH:mm:ss}-%m%n
+
+# General Log Settings
+#log4j.rootLogger=INFO,stdout,logfile
+
+# spring
+#log4j.logger.org.springframework=DEBUG,stdout,logfile
+#log4j.logger.org.springframework.aop.framework=DEBUG,stdout,logfile
+#log4j.logger.org.springframework.jdbc=DEBUG,stdout,logfile
+#log4j.logger.org.springframework.transaction=DEBUG,stdout,logfile
+#log4j.logger.org.springframework.transaction.support=DEBUG,stdout,logfile
+
+# \u6570\u636E\u5E93
+#log4j.logger.java.sql=DEBUG,stdout,logfile
+#log4j.logger.org.objectweb=DEBUG,stdout,logfile
+
+# \u6570\u636E\u5E93
+#log4j.logger.java.sql=DEBUG
+#log4j.logger.org.objectweb=INFO

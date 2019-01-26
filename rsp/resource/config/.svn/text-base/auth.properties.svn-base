@@ -1,0 +1,3 @@
+limitType=NO
+nofiltersUrl=/login,/org/user/logon,/research_system_security_check,/random/getRandomCode
+exception=error

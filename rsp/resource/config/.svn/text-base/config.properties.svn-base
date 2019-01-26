@@ -1,0 +1,12 @@
+#FTP
+FTP.HOST= 10.7.130.114
+FTP.PORT=21
+FTP.USERNAME=administrator
+FTP.PASSWORD=AXyc@2015$07
+
+#FTP Path
+FTP.KM.DOCS.DRIVE=D:\\kmdocs\\
+
+#临时PDF文件路径
+KM.DOCS.DRIVE=D:\\kmdocs\\
+

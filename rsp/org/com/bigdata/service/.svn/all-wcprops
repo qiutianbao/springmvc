@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/km/!svn/ver/8527/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service
+END
+SysUserRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysUserRoleService.java
+END
+SysRoleService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysRoleService.java
+END
+SysResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysResourceService.java
+END
+SysUserResService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysUserResService.java
+END
+SysRoleResService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysRoleResService.java
+END
+SysUserDeptService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysUserDeptService.java
+END
+SysDeptService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysDeptService.java
+END
+SysUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/km/!svn/ver/8118/branches/km_axzq/cbd.rsp/rsp.web/org/com/bigdata/service/SysUserService.java
+END

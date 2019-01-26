@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL MAP 2.0//EN"
+  "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<!-- author:jameson.fang created:2013-07-29 22:06:40 version:1.0 -->
+<!--
+	系统资源表(SYS_RESOURCE) :系统资源表
+	RES_ID(VARCHAR2)	:资源ID
+	RES_TYPE(CHAR)	:区别是资源,菜单及各种类型的菜单
+1-普通资源
+2.主菜单
+3.客户菜单
+4.项目菜单
+	RES_NAME(VARCHAR2)	:资源名称
+	RES_FULL_NAME(VARCHAR2)	:详细名称
+	RES_PARENT_ID(VARCHAR2)	:资源父节点
+	RES_URL(VARCHAR2)	:资源URL
+	RES_LEVEL(NUMBER)	:资源级别
+	RES_SEQ_NUM(NUMBER)	:资源序号
+	CREATE_TIME(TIMESTAMP(6))	:创建时间
+	CREATE_BY(VARCHAR2)	:创建人
+	UPDATE_TIME(TIMESTAMP(6))	:修改时间
+	UPDATE_BY(VARCHAR2)	:修改人
+	TEMPLATE(VARCHAR2)	:模板
+	MENU_PARAMS(VARCHAR2)	:变量
+	NEW_WIN_TYPE(CHAR)	:打开新窗口类型
+	MENU_WIDTH(VARCHAR2)	:菜单宽度
+	MENU_HEIGHT(VARCHAR2)	:菜单高度
+	MENU_DEFAULT(CHAR)	:菜单默认值
+	MENU_SHOW(CHAR)	:菜单是否显示
+	FLAG(CHAR)	:启动标示
+	STATUS(CHAR)	:启动状态
+	UDF1(VARCHAR2)	:
+	UDF2(VARCHAR2)	:
+	UDF3(VARCHAR2)	:
+	UDF4(VARCHAR2)	:
+	UDF5(VARCHAR2)	:
+	UDF6(VARCHAR2)	:
+sqlMapConfig:
+	
+-->
+<sqlMap namespace="SysResource">
+
+<parameterMap id="SysResourceMap" class="SysResource">
+	<parameter property="resId" javaType="String" />
+	<parameter property="resType" javaType="String" />
+	<parameter property="resName" javaType="String" />
+	<parameter property="resFullName" javaType="String" />
+	<parameter property="resParentId" javaType="String" />
+	<parameter property="resUrl" javaType="String" />
+	<parameter property="resLevel" javaType="Integer" />
+	<parameter property="resSeqNum" javaType="Integer" />
+	<parameter property="createTime" javaType="java.util.Date" />
+	<parameter property="createBy" javaType="String" />
+	<parameter property="updateTime" javaType="java.util.Date" />
+	<parameter property="updateBy" javaType="String" />
+	<parameter property="template" javaType="String" />
+	<parameter property="menuParams" javaType="String" />
+	<parameter property="newWinType" javaType="String" />
+	<parameter property="menuWidth" javaType="String" />
+	<parameter property="menuHeight" javaType="String" />
+	<parameter property="menuDefault" javaType="String" />
+	<parameter property="menuShow" javaType="String" />
+	<parameter property="flag" javaType="String" />
+	<parameter property="status" javaType="String" />
+	<parameter property="udf1" javaType="String" />
+	<parameter property="udf2" javaType="String" />
+	<parameter property="udf3" javaType="String" />
+	<parameter property="udf4" javaType="String" />
+	<parameter property="udf5" javaType="String" />
+	<parameter property="udf6" javaType="String" />
+</parameterMap>
+
+
+<insert id="insertSysResource" parameterClass="SysResource">
+<!--<selectKey resultClass="Integer" keyProperty="resId">
+	SELECT SYS_RESOURCE_SEQ.NEXTVAL FROM DUAL
+</selectKey>-->
+<![CDATA[
+INSERT INTO SYS_RESOURCE (
+ RES_ID,
+ RES_TYPE,
+ RES_NAME,
+ RES_FULL_NAME,
+ RES_PARENT_ID,
+ RES_URL,
+ RES_LEVEL,
+ RES_SEQ_NUM,
+ CREATE_TIME,
+ CREATE_BY,
+ UPDATE_TIME,
+ UPDATE_BY,
+ TEMPLATE,
+ MENU_PARAMS,
+ NEW_WIN_TYPE,
+ MENU_WIDTH,
+ MENU_HEIGHT,
+ MENU_DEFAULT,
+ MENU_SHOW,
+ FLAG,
+ STATUS,
+ UDF1,
+ UDF2,
+ UDF3,
+ UDF4,
+ UDF5,
+ UDF6
+)VALUES(
+ #resId:VARCHAR#,
+	#resType:VARCHAR#,
+	#resName:VARCHAR#,
+	#resFullName:VARCHAR#,
+	#resParentId:VARCHAR#,
+	#resUrl:VARCHAR#,
+	#resLevel:INTEGER#,
+	#resSeqNum:INTEGER#,
+	#createTime:TIMESTAMP#,
+	#createBy:VARCHAR#,
+	#updateTime:TIMESTAMP#,
+	#updateBy:VARCHAR#,
+	#template:VARCHAR#,
+	#menuParams:VARCHAR#,
+	#newWinType:VARCHAR#,
+	#menuWidth:VARCHAR#,
+	#menuHeight:VARCHAR#,
+	#menuDefault:VARCHAR#,
+	#menuShow:VARCHAR#,
+	#flag:VARCHAR#,
+	#status:VARCHAR#,
+	#udf1:VARCHAR#,
+	#udf2:VARCHAR#,
+	#udf3:VARCHAR#,
+	#udf4:VARCHAR#,
+	#udf5:VARCHAR#,
+	#udf6:VARCHAR#
+)
+]]>
+</insert>
+
+<resultMap id="SysResourceResult" class="SysResource" groupBy="resId">
+  <result property="resId" column="RES_ID"/>
+  <result property="resType" column="RES_TYPE"/>
+  <result property="resName" column="RES_NAME"/>
+  <result property="resFullName" column="RES_FULL_NAME"/>
+  <result property="resParentId" column="RES_PARENT_ID"/>
+  <result property="resUrl" column="RES_URL"/>
+  <result property="resLevel" column="RES_LEVEL"/>
+  <result property="resSeqNum" column="RES_SEQ_NUM"/>
+  <result property="createTime" column="CREATE_TIME"/>
+  <result property="createBy" column="CREATE_BY"/>
+  <result property="updateTime" column="UPDATE_TIME"/>
+  <result property="updateBy" column="UPDATE_BY"/>
+  <result property="template" column="TEMPLATE"/>
+  <result property="menuParams" column="MENU_PARAMS"/>
+  <result property="newWinType" column="NEW_WIN_TYPE"/>
+  <result property="menuWidth" column="MENU_WIDTH"/>
+  <result property="menuHeight" column="MENU_HEIGHT"/>
+  <result property="menuDefault" column="MENU_DEFAULT"/>
+  <result property="menuShow" column="MENU_SHOW"/>
+  <result property="flag" column="FLAG"/>
+  <result property="status" column="STATUS"/>
+  <result property="udf1" column="UDF1"/>
+  <result property="udf2" column="UDF2"/>
+  <result property="udf3" column="UDF3"/>
+  <result property="udf4" column="UDF4"/>
+  <result property="udf5" column="UDF5"/>
+  <result property="udf6" column="UDF6"/>
+  <result property="resParentName" column="resParentName"/>
+  <result property="countSub" column="COUNT_SUB"/>
+</resultMap>
+
+<resultMap id="SysResourceResultByParam" class="SysResource" groupBy="resId">
+  <result property="resId" column="RES_ID"/>
+  <result property="resName" column="RES_NAME"/>
+  <result property="resParentId" column="RES_PARENT_ID"/>
+  <result property="resType" column="RES_TYPE"/>
+  <result property="resLevel" column="RES_LEVEL"/>
+  <result property="countSub" column="COUNT_SUB"/>
+  
+</resultMap>
+
+<update id="updateSysResource" parameterClass="SysResource">
+<![CDATA[
+UPDATE SYS_RESOURCE ]]>
+<dynamic prepend="set">
+<isNotNull prepend="," property="resType">	
+	<![CDATA[ RES_TYPE = #resType# ]]>
+</isNotNull>
+<isNotNull prepend="," property="resName">	
+	<![CDATA[ RES_NAME = #resName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="resFullName">	
+	<![CDATA[ RES_FULL_NAME = #resFullName# ]]>
+</isNotNull>
+<isNotNull prepend="," property="resParentId">	
+	<![CDATA[ RES_PARENT_ID = #resParentId# ]]>
+</isNotNull>
+<isNotNull prepend="," property="resUrl">	
+	<![CDATA[ RES_URL = #resUrl# ]]>
+</isNotNull>
+<isNotNull prepend="," property="resLevel">	
+	<![CDATA[ RES_LEVEL = #resLevel# ]]>
+</isNotNull>
+<isNotNull prepend="," property="resSeqNum">	
+	<![CDATA[ RES_SEQ_NUM = #resSeqNum# ]]>
+</isNotNull>
+<isNotNull prepend="," property="createTime">	
+	<![CDATA[ CREATE_TIME = #createTime# ]]>
+</isNotNull>
+<isNotNull prepend="," property="createBy">	
+	<![CDATA[ CREATE_BY = #createBy# ]]>
+</isNotNull>
+<isNotNull prepend="," property="updateTime">	
+	<![CDATA[ UPDATE_TIME = #updateTime# ]]>
+</isNotNull>
+<isNotNull prepend="," property="updateBy">	
+	<![CDATA[ UPDATE_BY = #updateBy# ]]>
+</isNotNull>
+<isNotNull prepend="," property="template">	
+	<![CDATA[ TEMPLATE = #template# ]]>
+</isNotNull>
+<isNotNull prepend="," property="menuParams">	
+	<![CDATA[ MENU_PARAMS = #menuParams# ]]>
+</isNotNull>
+<isNotNull prepend="," property="newWinType">	
+	<![CDATA[ NEW_WIN_TYPE = #newWinType# ]]>
+</isNotNull>
+<isNotNull prepend="," property="menuWidth">	
+	<![CDATA[ MENU_WIDTH = #menuWidth# ]]>
+</isNotNull>
+<isNotNull prepend="," property="menuHeight">	
+	<![CDATA[ MENU_HEIGHT = #menuHeight# ]]>
+</isNotNull>
+<isNotNull prepend="," property="menuDefault">	
+	<![CDATA[ MENU_DEFAULT = #menuDefault# ]]>
+</isNotNull>
+<isNotNull prepend="," property="menuShow">	
+	<![CDATA[ MENU_SHOW = #menuShow# ]]>
+</isNotNull>
+<isNotNull prepend="," property="flag">	
+	<![CDATA[ FLAG = #flag# ]]>
+</isNotNull>
+<isNotNull prepend="," property="status">	
+	<![CDATA[ STATUS = #status# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf1">	
+	<![CDATA[ UDF1 = #udf1# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf2">	
+	<![CDATA[ UDF2 = #udf2# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf3">	
+	<![CDATA[ UDF3 = #udf3# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf4">	
+	<![CDATA[ UDF4 = #udf4# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf5">	
+	<![CDATA[ UDF5 = #udf5# ]]>
+</isNotNull>
+<isNotNull prepend="," property="udf6">	
+	<![CDATA[ UDF6 = #udf6# ]]>
+</isNotNull>
+</dynamic>
+<![CDATA[ WHERE RES_ID = #resId#
+]]>
+</update>
+
+<delete id="deleteSysResource" parameterClass="Map">
+<![CDATA[
+DELETE FROM SYS_RESOURCE 
+	WHERE RES_ID = #resId#
+]]>
+</delete>
+
+
+<delete id="deleteSysRoleResNotInSysResource" >
+<![CDATA[
+ 	delete from sys_role_res r where r.res_id not in(select r2.res_id from sys_resource r2)
+]]>
+</delete>
+
+<delete id="deleteSysUserResNotInSysResource" >
+<![CDATA[
+ 	delete from sys_user_res r where r.res_id not in(select r2.res_id from sys_resource r2)
+]]>
+</delete>
+
+<delete id="deleteSysResourceByResId" parameterClass="String">
+<![CDATA[
+DELETE FROM SYS_RESOURCE 
+	WHERE RES_ID = #resId#
+]]>
+</delete>
+
+<select id="searchSysResourceByParams" parameterClass="Map" resultMap="SysResourceResult">
+<![CDATA[
+SELECT
+ r1.RES_ID,
+ r1.RES_TYPE,
+ r1.RES_NAME,
+ r1.RES_FULL_NAME,
+ r1.RES_PARENT_ID,
+ r1.RES_URL,
+ r1.RES_LEVEL,
+ r1.RES_SEQ_NUM,
+ r1.CREATE_TIME,
+ r1.CREATE_BY,
+ r1.UPDATE_TIME,
+ r1.UPDATE_BY,
+ r1.TEMPLATE,
+ r1.MENU_PARAMS,
+ r1.NEW_WIN_TYPE,
+ r1.MENU_WIDTH,
+ r1.MENU_HEIGHT,
+ r1.MENU_DEFAULT,
+ r1.MENU_SHOW,
+ r1.FLAG,
+ r1.STATUS,
+ r1.UDF1,
+ r1.UDF2,
+ r1.UDF3,
+ r1.UDF4,
+ r1.UDF5,
+ r1.UDF6,
+ r2.res_name as resParentName,
+ (select count(r3.res_id)
+          from sys_resource r3
+         where r1.res_id = r3.res_parent_id
+           and r3.status = 'Y') as count_sub
+FROM SYS_RESOURCE r1 left join sys_resource r2 on r1.res_parent_id=r2.res_id 
+]]>
+<dynamic prepend="WHERE">
+ <isNotNull prepend="AND" property="resId">
+  <![CDATA[ r1.RES_ID LIKE #resId# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resType">
+  <![CDATA[ r1.RES_TYPE LIKE #resType# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resName">
+  <![CDATA[ r1.RES_NAME LIKE #resName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resFullName">
+  <![CDATA[ r1.RES_FULL_NAME LIKE #resFullName# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resParentId">
+  <![CDATA[ r1.RES_PARENT_ID LIKE #resParentId# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resUrl">
+  <![CDATA[ r1.RES_URL LIKE #resUrl# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resLevel">	
+ <![CDATA[ r1.RES_LEVEL = #resLevel# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="resSeqNum">	
+ <![CDATA[ r1.RES_SEQ_NUM = #resSeqNum# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="createTimeAfter">
+  <![CDATA[ r1.CREATE_TIME >= #createTimeAfter# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="createTimeBefor">
+  <![CDATA[ r1.CREATE_TIME <= #createTimeBefor# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="createBy">
+  <![CDATA[ r1.CREATE_BY LIKE #createBy# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="updateTimeAfter">
+  <![CDATA[ r1.UPDATE_TIME >= #updateTimeAfter# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="updateTimeBefor">
+  <![CDATA[ r1.UPDATE_TIME <= #updateTimeBefor# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="updateBy">
+  <![CDATA[ r1.UPDATE_BY LIKE #updateBy# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="template">
+  <![CDATA[ r1.TEMPLATE LIKE #template# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="menuParams">
+  <![CDATA[ r1.MENU_PARAMS LIKE #menuParams# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="newWinType">
+  <![CDATA[ r1.NEW_WIN_TYPE LIKE #newWinType# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="menuWidth">
+  <![CDATA[ r1.MENU_WIDTH LIKE #menuWidth# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="menuHeight">
+  <![CDATA[ r1.MENU_HEIGHT LIKE #menuHeight# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="menuDefault">
+  <![CDATA[ r1.MENU_DEFAULT LIKE #menuDefault# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="menuShow">
+  <![CDATA[ r1.MENU_SHOW LIKE #menuShow# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="flag">
+  <![CDATA[ r1.FLAG LIKE #flag# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="status">
+  <![CDATA[ r1.STATUS LIKE #status# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf1">
+  <![CDATA[ r1.UDF1 LIKE #udf1# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf2">
+  <![CDATA[ r1.UDF2 LIKE #udf2# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf3">
+  <![CDATA[ r1.UDF3 LIKE #udf3# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf4">
+  <![CDATA[ r1.UDF4 LIKE #udf4# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf5">
+  <![CDATA[ r1.UDF5 LIKE #udf5# ]]>
+ </isNotNull>
+ <isNotNull prepend="AND" property="udf6">
+  <![CDATA[ r1.UDF6 LIKE #udf6# ]]>
+ </isNotNull>
+</dynamic>
+<isNotNull property="orderBy">	
+ ORDER BY $orderBy$
+</isNotNull>
+</select>
+
+
+<select id="searchSysResourceByParentId" parameterClass="Map" resultMap="SysResourceResultByParam">
+<![CDATA[
+select r1.res_id,
+       r1.res_name,
+       r1.res_parent_id,
+       r1.res_type,
+       r1.res_level,
+       (select count(r2.res_id)
+          from sys_resource r2
+         where r1.res_id = r2.res_parent_id
+           and r2.status = 'Y') as count_sub
+  from sys_resource r1
+  
+]]>
+<dynamic prepend="WHERE">
+    <isNotNull prepend="AND" property="resParentId">
+        <![CDATA[ r1.res_parent_id = #resParentId# ]]>
+    </isNotNull>
+	<isNotNull prepend="AND" property="resParentIds">
+	    <![CDATA[ r1.res_parent_id IN ($resParentIds$) ]]>
+	</isNotNull>
+	<isNotNull prepend="AND" property="status">
+	    <![CDATA[ r1.status = #status# ]]>
+	</isNotNull>
+	
+	<isNotNull property="orderBy">
+	    ORDER BY $orderBy$
+	</isNotNull>
+</dynamic>
+<isNull property="orderBy">
+    ORDER BY r1.res_seq_num
+</isNull>
+</select>
+
+
+<select id="searchSysResourceByResId" parameterClass="Map" resultMap="SysResourceResultByParam">
+<![CDATA[
+select r1.res_id,
+       r1.res_name,
+       r1.res_parent_id,
+       r1.res_type,
+       r1.res_level,
+       (select count(r2.res_id)
+          from sys_resource r2
+         where r1.res_id = r2.res_parent_id
+           and r2.status = 'Y') as count_sub
+  from sys_resource r1
+  
+]]>
+<dynamic prepend="WHERE">
+    <isNotNull prepend="AND" property="resId">
+        <![CDATA[ r1.res_id = #resId# ]]>
+    </isNotNull>
+	<isNotNull prepend="AND" property="resParentIds">
+	    <![CDATA[ r1.res_id IN ($resParentIds$) ]]>
+	</isNotNull>
+	<isNotNull prepend="AND" property="status">
+	    <![CDATA[ r1.status = #status# ]]>
+	</isNotNull>
+	
+	<isNotNull property="orderBy">
+	    ORDER BY $orderBy$
+	</isNotNull>
+</dynamic>
+<isNull property="orderBy">
+    ORDER BY r1.res_seq_num
+</isNull>
+</select>
+
+</sqlMap>

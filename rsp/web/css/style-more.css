@@ -1,0 +1,73 @@
+.inputHint {
+	width: 180px;
+	line-height: 15px;
+	height: 15px;
+	border: 1px solid #0054a5;
+	padding-left: 5px;
+	color: #999;
+}
+
+.inputActive {
+	width: 180px;
+	line-height: 15px;
+	height: 20px;
+	border: 1px solid #0054a5;
+	padding-left: 2px;
+	color: black;
+}
+
+.inputActive2 {
+    width: 70px;
+    line-height: 15px;
+    height: 20px;
+    border: 1px solid #0054a5;
+    padding-left: 0px;
+    color: black;
+}
+
+.inputActive3 {
+    width: 70px;
+    line-height: 15px;
+    height: 20px;
+    padding-left: 0px;
+    color: black;
+}
+
+input.button {
+	font-family: "宋体";
+	font-size: 12px;
+	display: block;
+	height: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	background: url(../images/bg7.gif) no-repeat top left;
+	background-repeat: repeat-x;
+	border: 1px solid #999;
+	background-position: 0px 0px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	float: left;
+}
+
+input.button:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	font-color: #0054A5;
+	display: block;
+	height: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	background: url(../images/bg7.gif) no-repeat top left;
+	background-repeat: repeat-x;
+	border: 1px solid #0054A5;
+	background-position: 0px 0px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	float: left;
+}
